@@ -68,3 +68,34 @@ small {
   margin-top: 2rem;
   text-align: center;
 }
+
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  form {
+    max-width: 100%;
+    width: 200px;
+    max-height: 25%;
+    max-width: 75%;
+  }
+
+  .input::placeholder {
+    font-size: 1;
+  }
+
+  .input {
+    border: none;
+    font-size: 1rem;
+    color: #444;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+  }
+
+  small {
+    margin-top: 10rem;
+  }
+}

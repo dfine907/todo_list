@@ -5,6 +5,8 @@ const todosUL = document.getElementById("todos");
 //use the brower API to access local storage-- JSON needed to parse
 const todos = JSON.parse(localStorage.getItem("todos"));
 
+console.log(localStorage);
+
 if (todos) {
   todos.forEach((todo) => addTodo(todo));
 }
@@ -37,7 +39,7 @@ function addTodo(todo) {
 
     todoElement.addEventListener("contextmenu", (e) => {
       e.preventDefault();
-
+      console.log(e)
       todoElement.remove();
       updateLocalStorage();
     });
